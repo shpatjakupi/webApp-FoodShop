@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head')%>
+<body>
+    <%- include('./partials/nav')%>
+    <div class="blogs content">
+        <h2>The menu</h2>
+        <% if (pizza.length > 0) { %>
+            <% pizza.forEach(pizz => { %>
+                <a class="single" href="/menu/ <%= pizz._id %>" >
+                <h3><%= pizz.Name%> </h3>
+                <p><%= pizz.Filling%></p>
+                <p><%= pizz.Price%> Kr</p>
+                </a>
+                
+          <%  }) } %>
+    </div>
+    
+</body>
+<%- include('./partials/footer')%>
+</html>

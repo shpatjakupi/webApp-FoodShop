@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head')%>
+<body>
+  <%- include('./partials/nav')%>
+    <div class="create-blog content">
+    <form action="/menu" method="post">
+      <label for="title">Pizza name:</label>
+      <input type="text" id="name" name="Name" required>
+      <label for="Filling">Pizza filling:</label>
+      <input type="text" id="filling" name="Filling" required>
+      <label for="Price">Pizza Price:</label>
+      <input type="number" id="price" name="Price" required>
+      <button>Submit</button>
+    </form>
+  </div>
+    
+</body>
+<%- include('./partials/footer')%>
+</html>
+
+
